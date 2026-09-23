@@ -6,48 +6,128 @@
   <title>Projects | Tharaka Wijethunge</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <div id="site-nav"></div>
 
   <section class="section page-section">
     <div class="container">
+
       <h1 class="section-title">Selected Projects</h1>
+
       <div class="grid-2">
+
+        <!-- HPC FAILURE PROGNOSIS -->
+        <div class="glass card project">
+          <h3>HPC Failure Prognosis</h3>
+
+          <div class="project-meta">
+            <strong>RPI & ORNL</strong>
+          </div>
+
+          <p>
+            Developing data-driven methods for early prediction of failures in
+            large-scale HPC systems using telemetry, scheduler, and system-state
+            data. The work applies causal discovery and temporal event modeling,
+            including PCMCI+ and Hawkes processes, to identify failure precursors
+            and enable proactive system reliability management.
+          </p>
+        </div>
+
+
+        <!-- BUILDING ENERGY / IAQ -->
         <div class="glass card project">
           <h3>Building Energy, Thermal Modeling & IAQ Control</h3>
+
+          <div class="project-meta">
+            <strong>RPI & PNNL</strong>
+          </div>
+
           <p>
-            Designed controllers for temperature and PM2.5 regulation, studied energy–IAQ tradeoffs,
-            and developed optimal control methods for multivariable building systems.
+            Designed controllers for temperature and PM2.5 regulation and
+            analyzed energy–IAQ tradeoffs. Developed optimal control methods for
+            non-convex multivariable building systems under formally defined
+            policy constraints, with theoretical and simulation results showing
+            improvements over traditional model predictive control approaches.
+          </p>
+
+          <p>
+            <strong>Submitted to IFAC 2026.</strong>
           </p>
         </div>
 
+
+        <!-- MULTIMODAL MODELS -->
         <div class="glass card project">
           <h3>Fast Inference for Large Multimodal Models</h3>
+
+          <div class="project-meta">
+            <strong>RPI & IBM</strong>
+          </div>
+
           <p>
-            Developed cost-aware routing ideas that selectively invoke expensive modalities only when needed.
+            Contributed to the development of a cost-aware routing framework for
+            large multimodal models that selectively invokes expensive modalities
+            only when needed, reducing inference cost while preserving model
+            performance.
+          </p>
+
+          <p>
+            <strong>Manuscript in preparation.</strong>
           </p>
         </div>
 
+
+        <!-- OPEN RAN -->
+        <div class="glass card project">
+          <h3>Machine Learning for Open RAN</h3>
+
+          <div class="project-meta">
+            <strong>RPI & UCR</strong>
+          </div>
+
+          <p>
+            Contributed to machine-learning and optimization-based frameworks for
+            multi-operator spectrum sharing and radio resource allocation in
+            Open RAN, improving coordination and resource utilization across
+            network operators.
+          </p>
+
+          <p>
+            Resulted in accepted papers at
+            <strong>ACM MobiCom 2026</strong> and
+            <strong>IEEE MILCOM 2026</strong>.
+          </p>
+        </div>
+
+
+        <!-- MPQUIC -->
         <div class="glass card project">
           <h3>MPQUIC Research</h3>
+
+          <div class="project-meta">
+            <strong>RPI</strong>
+          </div>
+
           <p>
-            Implemented and profiled MPQUIC transport behavior, tuning multipath scheduling and congestion-control logic,
-            and improving observability in open-source code.
+            Implemented and profiled the MPQUIC transport-layer protocol,
+            tuned congestion-control and multipath scheduling mechanisms,
+            and improved open-source code to obtain better observability
+            into protocol behavior and performance.
           </p>
         </div>
 
-        <div class="glass card project">
-          <h3>Transformer-Based NLP & Vision Projects</h3>
-          <p>
-            Built a Transformer-based neural machine translation pipeline and an image captioning system using
-            a ViT encoder with Transformer decoder.
-          </p>
-        </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer"><div class="container">© 2026 Tharaka Wijethunge</div></footer>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Tharaka Wijethunge
+    </div>
+  </footer>
+
   <script src="js/navbar.js"></script>
 </body>
 </html>
