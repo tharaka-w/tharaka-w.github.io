@@ -5,21 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Tharaka Wijethunge</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/projects.css" />
 </head>
 
 <body>
   <div id="site-nav"></div>
 
-  <section class="section page-section">
+  <section class="section page-section projects-page">
     <div class="container">
 
       <h1 class="section-title">Selected Projects</h1>
 
       <div class="grid-2">
 
+
+        <!-- MECC: MINIMUM-ENERGY VENTILATION -->
+        <article class="glass card project project-featured" id="mecc-ventilation" aria-labelledby="mecc-title">
+          <h2 id="mecc-title">Minimum-Energy Ventilation for Controlling Particulate Matter Concentrations in Buildings</h2>
+          <div class="project-meta"><strong>RPI &amp; PNNL &middot; MECC</strong></div>
+          <div class="project-body">
+            <div class="project-copy">
+              <p>Ventilation can reduce indoor particulate matter, but it also affects a building's energy use. This work develops ventilation and control strategies that maintain indoor air-quality limits while minimizing the energy required.</p>
+              <p>Presented at the Modeling, Estimation and Control Conference (MECC), this paper is part of my research on energy-efficient control of building systems, including indoor air quality and thermal dynamics.</p>
+              <div class="project-links">
+                <a href="publications.html">Related publications</a>
+              </div>
+            </div>
+            <figure class="project-photo">
+              <a href="assets/mecc.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size MECC presentation photo">
+                <img src="assets/mecc.jpeg" alt="Tharaka presenting the Minimum-Energy Ventilation paper at MECC" width="2040" height="1536" loading="lazy" decoding="async" />
+              </a>
+              <figcaption>Presenting the minimum-energy ventilation work at MECC.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- RPI AND IBM: MULTIMODAL INFERENCE -->
+        <article class="glass card project project-featured" id="multimodal-inference" aria-labelledby="ibm-title">
+          <h2 id="ibm-title">Fast Inference for Large Multimodal Models</h2>
+          <div class="project-meta"><strong>RPI &amp; IBM</strong></div>
+          <div class="project-copy">
+            <p>Large multimodal models can process text and images together, but additional modalities increase inference cost. This project studies when text alone is sufficient and when a model needs the image as well.</p>
+            <p>I contributed to a cost-aware routing framework that uses model confidence to decide whether to invoke a more expensive modality. We compare text-only, image-only, and combined inputs to study the tradeoff between prediction performance and computational cost across models and datasets.</p>
+            <p><strong>Manuscript in preparation.</strong></p>
+          </div>
+          <div class="project-media">
+            <figure class="project-photo project-photo-portrait">
+              <a href="assets/ibm.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open full-size RPI and IBM project photo">
+                <img src="assets/ibm.jpeg" alt="Tharaka standing beside the Fast Inference for Large Multi-modal Models research poster" width="768" height="1024" loading="lazy" decoding="async" />
+              </a>
+              <figcaption>At the RPI&ndash;IBM project poster presentation.</figcaption>
+            </figure>
+            <aside class="project-poster" aria-labelledby="poster-title">
+              <h3 id="poster-title">Research poster</h3>
+              <figure>
+                <a class="poster-preview" href="assets/ibmpaper.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the Fast Inference for Large Multimodal Models poster PDF">
+                  <img src="assets/ibm-poster-preview.png" alt="Preview of the project poster with the modality-routing framework and benchmark comparisons" width="1600" height="1237" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>Fast Inference for Large Multi-modal Models &middot; Future of Computing Research Collaboration at RPI</figcaption>
+              </figure>
+              <div class="project-links">
+                <a href="assets/ibmpaper.pdf" target="_blank" rel="noopener noreferrer">View poster (PDF)</a>
+                <a href="assets/ibmpaper.pdf" download="Tharaka-Wijethunge-IBM-Research-Poster.pdf">Download poster</a>
+              </div>
+              <details class="poster-reader">
+                <summary>Read poster on this page</summary>
+                <object class="poster-document" data="assets/ibmpaper.pdf#page=1&amp;view=Fit&amp;navpanes=0" type="application/pdf" title="Fast Inference for Large Multimodal Models poster PDF">
+                  <p><a href="assets/ibmpaper.pdf" target="_blank" rel="noopener noreferrer">Open the poster PDF</a> to read it at full size.</p>
+                </object>
+              </details>
+            </aside>
+          </div>
+        </article>
+
         <!-- HPC FAILURE PROGNOSIS -->
         <div class="glass card project">
-          <h3>HPC Failure Prognosis</h3>
+          <h2>HPC Failure Prognosis</h2>
 
           <div class="project-meta">
             <strong>RPI & ORNL</strong>
@@ -37,7 +98,7 @@
 
         <!-- BUILDING ENERGY / IAQ -->
         <div class="glass card project">
-          <h3>Building Energy, Thermal Modeling & IAQ Control</h3>
+          <h2>Building Energy, Thermal Modeling &amp; IAQ Control</h2>
 
           <div class="project-meta">
             <strong>RPI & PNNL</strong>
@@ -57,30 +118,9 @@
         </div>
 
 
-        <!-- MULTIMODAL MODELS -->
-        <div class="glass card project">
-          <h3>Fast Inference for Large Multimodal Models</h3>
-
-          <div class="project-meta">
-            <strong>RPI & IBM</strong>
-          </div>
-
-          <p>
-            Contributed to the development of a cost-aware routing framework for
-            large multimodal models that selectively invokes expensive modalities
-            only when needed, reducing inference cost while preserving model
-            performance.
-          </p>
-
-          <p>
-            <strong>Manuscript in preparation.</strong>
-          </p>
-        </div>
-
-
         <!-- OPEN RAN -->
         <div class="glass card project">
-          <h3>Machine Learning for Open RAN</h3>
+          <h2>Machine Learning for Open RAN</h2>
 
           <div class="project-meta">
             <strong>RPI & UCR</strong>
@@ -103,7 +143,7 @@
 
         <!-- MPQUIC -->
         <div class="glass card project">
-          <h3>MPQUIC Research</h3>
+          <h2>MPQUIC Research</h2>
 
           <div class="project-meta">
             <strong>RPI</strong>
