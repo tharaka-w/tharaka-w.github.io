@@ -4,59 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Tharaka Wijethunge</title>
-  <meta name="description" content="Research background and doctoral education of Tharaka Wijethunge at Rensselaer Polytechnic Institute." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">Tharaka Wijethunge</a>
-      <nav class="nav-links" aria-label="Main navigation">
-          <a href="about.html" aria-current="page">About</a>
-          <a href="publications.html">Publications</a>
-          <a href="projects.html">Projects</a>
-          <a href="experience.html">Experience</a>
-          <a href="skills.html">Skills</a>
-          <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-nav"></div>
 
-<main id="main-content" class="container page">
-    <header class="page-header">
-      <p class="eyebrow">Background</p>
-      <h1>About</h1>
-      <p>I am pursuing a PhD in Electrical, Computer &amp; Systems Engineering at Rensselaer Polytechnic Institute in Troy, New York.</p>
-    </header>
-    <div class="prose">
-      <section aria-labelledby="research-background">
-        <h2 id="research-background">Research</h2>
-        <p>My research brings together optimization, control, and machine learning to study resource allocation in complex engineered systems. I work on problems where decisions must account for competing objectives, physical constraints, and interactions across a network.</p>
-        <p>Current projects include thermal and air-quality modeling for multi-zone buildings, multimodal model benchmarking and inference routing, Open RAN resource sharing, and reliability in high-performance computing.</p>
-        <p><a href="projects.html">Read about my projects</a> or <a href="publications.html">browse publications</a>.</p>
-      </section>
-      <section aria-labelledby="industry-background">
-        <h2 id="industry-background">Industry experience</h2>
-        <p>Before graduate research, I worked in DevOps and telecommunications. At Axiata Digital Labs, I built and operated Kubernetes infrastructure, CI/CD and MLOps pipelines, and cloud deployments. Earlier, at Sri Lanka Telecom Mobitel, I contributed to core network capacity planning and virtualized infrastructure.</p>
-        <p>These roles gave me practical experience with the operational side of computing systems: deployment, monitoring, troubleshooting, and capacity planning.</p>
-      </section>
-      <section aria-labelledby="education-title">
-        <h2 id="education-title">Education</h2>
-        <dl class="education">
-          <dt>PhD in Electrical, Computer &amp; Systems Engineering</dt>
-          <dd>Rensselaer Polytechnic Institute &middot; In progress</dd>
-          <dd>GPA: 4.0</dd>
-        </dl>
-      </section>
-    </div>
-  </main>
+  <section class="section page-section">
+    <div class="container">
+      <h1 class="section-title">About Me</h1>
+      <p class="section-sub">
+        I am currently pursuing a PhD in Electrical, Computer & Systems Engineering at Rensselaer Polytechnic Institute.
+        My work spans machine learning, deep learning, optimization, multivariable control systems, AI for networking,
+        multimodal LLM benchmarking, and modeling of building thermal and air-quality dynamics.
+      </p>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>&copy; 2026 Tharaka Wijethunge</span>
-      <a href="mailto:wijett@rpi.edu">wijett@rpi.edu</a>
+      <div class="grid-3">
+        <div class="glass card">
+          <h3>Research</h3>
+          <p>
+            My current work includes multimodal LLM benchmarking, fast inference routing decisions, optimization and control
+            for multi-zone HVAC and indoor air quality, and protocol/system performance analysis.
+          </p>
+        </div>
+        <div class="glass card">
+          <h3>Industry</h3>
+          <p>
+            I previously worked in DevOps and platform engineering, building and operating Kubernetes-based systems,
+            CI/CD and MLOps pipelines, cloud infrastructure, observability, and production deployments for large-scale
+            enterprise software.
+          </p>
+        </div>
+        <div class="glass card">
+          <h3>Focus</h3>
+          <p>
+            I am especially interested in intelligent decision-making systems that combine theory, optimization,
+            machine learning, and reliable large-scale engineering.
+          </p>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <footer class="footer"><div class="container">© 2026 Tharaka Wijethunge</div></footer>
+  <script src="js/navbar.js"></script>
 </body>
 </html>
