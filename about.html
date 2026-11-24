@@ -4,44 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Tharaka Wijethunge</title>
+  <meta name="description" content="Tharaka Wijethunge's research in smart buildings and Open RAN, and background in AIOps, DevOps, and high-performance computing." />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
 <body>
   <div id="site-nav"></div>
 
-  <section class="section page-section">
+  <section class="section page-section about-page">
     <div class="container">
       <h1 class="section-title">About Me</h1>
       <p class="section-sub">
-        I am currently pursuing a PhD in Electrical, Computer & Systems Engineering at Rensselaer Polytechnic Institute.
-        My work spans machine learning, deep learning, optimization, multivariable control systems, AI for networking,
-        multimodal LLM benchmarking, and modeling of building thermal and air-quality dynamics.
+        I am a PhD researcher in Electrical, Computer &amp; Systems Engineering at Rensselaer Polytechnic Institute.
+        I combine machine learning, optimization, and control with experience in cloud and platform engineering.
       </p>
 
-      <div class="grid-3">
-        <div class="glass card">
-          <h3>Research</h3>
-          <p>
-            My current work includes multimodal LLM benchmarking, fast inference routing decisions, optimization and control
-            for multi-zone HVAC and indoor air quality, and protocol/system performance analysis.
-          </p>
-        </div>
-        <div class="glass card">
-          <h3>Industry</h3>
-          <p>
-            I previously worked in DevOps and platform engineering, building and operating Kubernetes-based systems,
-            CI/CD and MLOps pipelines, cloud infrastructure, observability, and production deployments for large-scale
-            enterprise software.
-          </p>
-        </div>
-        <div class="glass card">
-          <h3>Focus</h3>
-          <p>
-            I am especially interested in intelligent decision-making systems that combine theory, optimization,
-            machine learning, and reliable large-scale engineering.
-          </p>
-        </div>
+      <div class="about-columns">
+        <section class="glass card about-panel" aria-labelledby="research-title">
+          <h2 id="research-title">Research</h2>
+          <p class="about-panel-intro">Modeling and decision-making for energy, air quality, networks, and multimodal AI.</p>
+
+          <div class="about-figures">
+            <figure class="about-topic">
+              <a class="topic-visual" href="assets/Smart_Buildings_IAQ.png" target="_blank" rel="noopener noreferrer" aria-label="Open the smart buildings and indoor air quality figure at full size">
+                <img src="assets/Smart_Buildings_IAQ.png" alt="Multi-zone smart building with HVAC, particulate matter monitoring, and modeling, optimization, and control methods" width="717" height="681" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="topic-caption">
+                <h3>Smart buildings &amp; indoor air quality</h3>
+                <p>Thermal modeling &middot; PM2.5 control &middot; Energy-efficient ventilation</p>
+              </figcaption>
+            </figure>
+
+            <figure class="about-topic">
+              <a class="topic-visual" href="assets/Open_RAN.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Open RAN research figure at full size">
+                <img src="assets/Open_RAN.png" alt="Open RAN architecture linking users, radio units, distributed and centralized units, and an intelligent controller" width="720" height="681" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="topic-caption">
+                <h3>Open RAN</h3>
+                <p>Spectrum sharing &middot; Resource allocation &middot; Network control</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <a class="about-link" href="projects.html">Explore research projects</a>
+        </section>
+
+        <section class="glass card about-panel" aria-labelledby="industry-title">
+          <h2 id="industry-title">Industry</h2>
+          <p class="about-panel-intro">Reliable platforms, from cloud deployments and operational monitoring to large-scale computing.</p>
+
+          <div class="about-figures">
+            <figure class="about-topic">
+              <a class="topic-visual" href="assets/AIOps.png" target="_blank" rel="noopener noreferrer" aria-label="Open the AIOps tools and capabilities figure at full size">
+                <img src="assets/AIOps.png" alt="AIOps overview with Grafana, Nagios, Prometheus, and Elastic for observability, alerting, and anomaly detection" width="582" height="371" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="topic-caption">
+                <h3>AIOps</h3>
+                <p>Observability &middot; Alerting &middot; Anomaly detection</p>
+              </figcaption>
+            </figure>
+
+            <figure class="about-topic">
+              <a class="topic-visual" href="assets/DevOps.png" target="_blank" rel="noopener noreferrer" aria-label="Open the DevOps tools and cloud platforms figure at full size">
+                <img src="assets/DevOps.png" alt="DevOps tools including Jenkins, Git, Docker, Kubernetes, Terraform, AWS, GCP, and Huawei Cloud" width="607" height="371" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="topic-caption">
+                <h3>DevOps</h3>
+                <p>CI/CD &middot; Kubernetes &middot; Infrastructure as code</p>
+              </figcaption>
+            </figure>
+
+            <figure class="about-topic">
+              <a class="topic-visual" href="assets/HPC.png" target="_blank" rel="noopener noreferrer" aria-label="Open the high-performance computing figure at full size">
+                <img src="assets/HPC.png" alt="High-performance computing overview showing Linux, Slurm, MPI, job scheduling, scalable compute, and large-scale workloads" width="599" height="371" loading="lazy" decoding="async" />
+              </a>
+              <figcaption class="topic-caption">
+                <h3>High-performance computing</h3>
+                <p>Workload scheduling &middot; Linux &middot; System reliability</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <a class="about-link" href="experience.html">View engineering experience</a>
+        </section>
       </div>
+
+      <section class="glass card about-focus" aria-labelledby="focus-title">
+        <h2 id="focus-title">Focus</h2>
+        <div class="chips" aria-label="Core areas of focus">
+          <span class="chip">Machine learning</span>
+          <span class="chip">Optimization</span>
+          <span class="chip">Control systems</span>
+          <span class="chip">Reliable infrastructure</span>
+        </div>
+      </section>
     </div>
   </section>
 
