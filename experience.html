@@ -4,51 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience | Tharaka Wijethunge</title>
+  <meta name="description" content="Research, DevOps, and telecommunications experience of Tharaka Wijethunge, including cloud platform engineering and an AWS/Kubernetes architecture example." />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/experience.css" />
 </head>
 <body>
   <div id="site-nav"></div>
 
-  <section class="section page-section">
+  <section class="section page-section experience-page">
     <div class="container">
       <h1 class="section-title">Experience</h1>
 
-      <div class="timeline-item glass">
+      <article class="timeline-item glass" aria-labelledby="research-role">
         <div class="role">
-          <h3>Research & Teaching Assistant</h3>
+          <h2 id="research-role">Research &amp; Teaching Assistant</h2>
           <span>Aug 2024 – Present</span>
         </div>
         <div class="org">Rensselaer Polytechnic Institute, Troy, NY</div>
-        <p>
-          Working on multimodal LLM benchmarking, scalable inference experimentation, optimization and control
-          for multi-zone indoor air quality and thermal dynamics, and MPQUIC protocol analysis and implementation.
-        </p>
-      </div>
+        <ul class="experience-points">
+          <li>Benchmark large multimodal models and compare text-only, image-only, and combined inputs to study prediction performance and inference cost.</li>
+          <li>Investigate cost-aware inference routing, using model confidence to determine when additional modalities are needed.</li>
+          <li>Develop optimization and control methods for temperature and PM2.5 regulation in multi-zone buildings, balancing indoor air quality with energy use.</li>
+          <li>Model building thermal and air-quality dynamics and evaluate control strategies through theoretical analysis and simulation.</li>
+          <li>Contribute to machine-learning and optimization methods for multi-operator spectrum sharing and resource allocation in Open RAN.</li>
+          <li>Implement and profile MPQUIC transport mechanisms, including congestion control and multipath scheduling, to study protocol behavior and performance.</li>
+        </ul>
+      </article>
 
-      <div class="timeline-item glass">
+      <article class="timeline-item glass" aria-labelledby="devops-role">
         <div class="role">
-          <h3>DevOps Engineer</h3>
+          <h2 id="devops-role">DevOps Engineer</h2>
           <span>Mar 2022 – Oct 2024</span>
         </div>
         <div class="org">Axiata Digital Labs</div>
-        <p>
-          Built and operated Kubernetes clusters across AWS, GCP, Azure, Huawei Cloud, and on-prem environments;
-          established CI/CD and MLOps pipelines; handled production troubleshooting, automation, infrastructure as code,
-          and performance/capacity engineering for major telecommunications platforms.
-        </p>
-      </div>
+        <ul class="experience-points">
+          <li>Built and operated Kubernetes-based application platforms across AWS, GCP, Azure, Huawei Cloud, and on-premises environments.</li>
+          <li>Established CI/CD and MLOps pipelines, automating build, test, container-image publishing, and deployment workflows across development, QA, and production.</li>
+          <li>Used GitOps delivery with Argo CD, Helm, and Kubernetes manifests to manage application releases and promote container images between environments.</li>
+          <li>Managed infrastructure as code with Terraform to provision cloud resources and maintain repeatable environment configurations.</li>
+          <li>Designed AWS application infrastructure using EKS, ECR, Application Load Balancers, RDS, and Route 53, with separate network and data resources for each environment.</li>
+          <li>Maintained observability and investigated production issues across application deployments, containers, and cloud infrastructure.</li>
+          <li>Performed performance analysis and capacity engineering for telecommunications platforms, supporting infrastructure planning and production operations.</li>
+        </ul>
 
-      <div class="timeline-item glass">
+        <section class="work-example" aria-labelledby="architecture-title">
+          <h3 id="architecture-title">AWS platform architecture</h3>
+          <p class="architecture-description">An example of the platform design I worked on: a shared delivery pipeline serving separate development, QA/staging, and production environments. Each environment has its own VPC, Kubernetes application resources, and RDS database cluster, with public ingress and private application and database subnets.</p>
+          <figure class="architecture-figure">
+            <a href="assets/devops.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size AWS and Kubernetes platform architecture diagram">
+              <img src="assets/devops.jpg" alt="AWS platform architecture showing GitHub/GitLab, CI/CD, ECR, Argo CD, and Terraform delivering to separate development, QA, and production environments with EKS, load balancers, and RDS" width="1532" height="882" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>
+              <span>Delivery pipeline, environment isolation, and application-to-database traffic flow.</span>
+              <a href="assets/devops.jpg" target="_blank" rel="noopener noreferrer">View full-size architecture</a>
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <article class="timeline-item glass" aria-labelledby="network-role">
         <div class="role">
-          <h3>Engineer — PS Core Network Planning</h3>
+          <h2 id="network-role">Engineer — PS Core Network Planning</h2>
           <span>Sep 2021 – Feb 2022</span>
         </div>
         <div class="org">Sri Lanka Telecom Mobitel</div>
-        <p>
-          Contributed to ISP/cloud capacity planning, forecasting pipelines, virtualized infrastructure maintenance,
-          and service quality improvements.
-        </p>
-      </div>
+        <ul class="experience-points">
+          <li>Contributed to ISP and cloud capacity planning to support network growth and service requirements.</li>
+          <li>Worked on forecasting pipelines to inform capacity projections and infrastructure planning.</li>
+          <li>Supported virtualized infrastructure maintenance and service-quality improvements.</li>
+        </ul>
+      </article>
     </div>
   </section>
 

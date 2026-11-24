@@ -1,0 +1,61 @@
+/* Experience-page additions using the shared site's existing colors and cards. */
+.experience-page .role h2 {
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+
+.experience-page .experience-points {
+  margin-top: 14px;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: .98rem;
+  line-height: 1.75;
+}
+
+.experience-page .experience-points li + li { margin-top: 10px; }
+.experience-page .experience-points li::marker { color: #96d8ff; }
+
+.experience-page .work-example {
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid var(--card-border);
+}
+
+.experience-page .work-example h3 { font-size: 1.1rem; margin-bottom: 12px; }
+.experience-page .architecture-description { max-width: 980px; color: var(--muted); font-size: .98rem; }
+.experience-page .architecture-figure { margin-top: 20px; }
+.experience-page .architecture-figure > a { display: block; border-radius: 14px; }
+.experience-page .architecture-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  background: white;
+}
+
+.experience-page .architecture-figure figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 20px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+.experience-page .architecture-figure figcaption a {
+  color: #b9e6ff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.experience-page .architecture-figure figcaption a:hover { color: white; }
+.experience-page a:focus-visible { outline: 2px solid #96d8ff; outline-offset: 5px; }
+
+@media (max-width: 600px) {
+  .experience-page .experience-points { padding-left: 20px; }
+  .experience-page .work-example { padding-top: 20px; }
+  .experience-page .architecture-figure figcaption { flex-direction: column; }
+}
