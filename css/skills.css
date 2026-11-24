@@ -1,0 +1,49 @@
+/* Skills and leadership additions; shared colors, cards, and navigation are retained. */
+.skills-page .page-links { display: flex; flex-wrap: wrap; gap: 14px 26px; margin-bottom: 32px; }
+.skills-page .page-links a, .skills-page .leadership-links a, .skills-page .organization-note a { color: #b9e6ff; text-decoration: underline; text-underline-offset: 4px; }
+.skills-page .page-links a:hover, .skills-page .leadership-links a:hover, .skills-page .organization-note a:hover { color: white; }
+.skills-page .skills-section, .skills-page .leadership-section { scroll-margin-top: 28px; }
+.skills-page .subsection-title { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; margin-bottom: 20px; }
+.skills-page .skill-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.skills-page .skill-group { min-width: 0; margin-bottom: 0; }
+.skills-page .skill-group p { margin-bottom: 18px; }
+.skills-page .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.skills-page .skill-tags li { padding: 6px 10px; border: 1px solid var(--card-border); border-radius: 8px; background: rgba(255,255,255,.04); color: var(--text); font-size: .875rem; line-height: 1.5; }
+.skills-page .leadership-section { margin-top: 48px; }
+.skills-page .leadership-card { padding: 28px; margin-bottom: 24px; }
+.skills-page .leadership-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px 28px; margin-bottom: 18px; }
+.skills-page .leadership-header > div { min-width: 0; }
+.skills-page .leadership-header h3 { font-size: 1.3rem; line-height: 1.4; margin-bottom: 6px; }
+.skills-page .leadership-area { color: #96d8ff; font-size: .875rem; margin-bottom: 8px; }
+.skills-page .leadership-org { color: var(--muted); font-size: .9375rem; }
+.skills-page .leadership-term { flex-shrink: 0; padding: 7px 12px; border: 1px solid var(--card-border); border-radius: 10px; background: rgba(255,255,255,.05); font-size: .875rem; }
+.skills-page .leadership-points { padding-left: 20px; margin-top: 18px; }
+.skills-page .leadership-points li { line-height: 1.75; }
+.skills-page .leadership-points li + li { margin-top: 10px; }
+.skills-page .leadership-points li::marker { color: #96d8ff; }
+.skills-page .leadership-links { margin-top: 20px; font-size: .9375rem; }
+.skills-page .organization-mark { display: block; flex-shrink: 0; }
+.skills-page .aiesec-logo { display: block; width: 192px; height: 30px; object-fit: cover; object-position: center; }
+.skills-page .wll-logo { display: block; width: 86px; height: 86px; border-radius: 12px; }
+.skills-page .organization-note { max-width: 960px; color: var(--muted); }
+.skills-page .leadership-description { max-width: 960px; margin-top: 16px; }
+.skills-page .leadership-gallery { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 26px; margin-top: 28px; padding-top: 26px; border-top: 1px solid var(--card-border); }
+.skills-page .leadership-photo { min-width: 0; margin: 0; }
+.skills-page .leadership-photo > a { display: block; border-radius: 14px; }
+.skills-page .leadership-photo img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--card-border); }
+.skills-page .leadership-photo figcaption { margin-top: 14px; }
+.skills-page .leadership-photo h4 { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 6px; }
+.skills-page .leadership-photo figcaption p { font-size: .9375rem; line-height: 1.7; }
+.skills-page a:focus-visible { outline: 2px solid #96d8ff; outline-offset: 5px; }
+
+@media (max-width: 1050px) {
+  .skills-page .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .skills-page .skill-groups, .skills-page .leadership-gallery { grid-template-columns: 1fr; }
+  .skills-page .leadership-header { flex-wrap: wrap; }
+  .skills-page .leadership-card { padding: 22px; }
+  .skills-page .leadership-photo:first-child { max-width: 340px; }
+  .skills-page .leadership-gallery { gap: 28px; }
+}

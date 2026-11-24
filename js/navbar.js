@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ["experience.html", "Experience"],
     ["publications.html", "Publications"],
     ["projects.html", "Projects"],
-    ["skills.html", "Skills"],
+    ["skills.html", "Skills & Leadership"],
     ["contact.html", "Contact"],
   ];
 
